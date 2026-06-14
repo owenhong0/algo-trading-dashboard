@@ -1,0 +1,19 @@
+{
+  "name": "algo-trading-dashboard",
+  "version": "1.0.0",
+  "description": "Algorithmic Trading Dashboard — Owen Hong",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vega": "^5.28.0",
+    "vega-embed": "^6.25.0",
+    "vega-lite": "^5.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vite": "^5.2.0"
+  }
+}

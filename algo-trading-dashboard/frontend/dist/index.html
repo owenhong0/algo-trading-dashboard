@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Algo Trading Dashboard — Owen Hong</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="/algo-trading-dashboard/style.css" />
+  <script type="module" crossorigin src="/algo-trading-dashboard/assets/index-BTWMlrYR.js"></script>
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-name">AlgoDesk</span>
+    </div>
+    <nav class="main-nav">
+      <button class="nav-link" data-page="dashboard">Dashboard</button>
+      <button class="nav-link" data-page="markowitz">Markowitz</button>
+      <button class="nav-link" data-page="learn">Learn</button>
+    </nav>
+    <div class="header-meta">
+      <span class="ticker-badge"><span class="ticker-label">AAPL</span></span>
+      <span class="strategy-tag">SMA Crossover + RSI Filter</span>
+      <span class="date-range">2022 – 2024</span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── Page 1: Dashboard ─────────────────────────────────────────── -->
+    <div id="page-dashboard" class="page">
+    <div id="loading" class="loading-state">
+      <span class="spinner"></span> Loading market data…
+    </div>
+
+    <div id="dashboard" style="display:none">
+
+      <!-- KPI Row -->
+      <section class="section">
+        <h2 class="section-title">Strategy Performance</h2>
+        <div id="metrics" class="metrics-grid"></div>
+      </section>
+
+      <!-- Price Chart + Signals -->
+      <section class="section chart-section">
+        <h2 class="section-title">Price Action & Signals</h2>
+        <p class="section-desc">
+          Dual Moving Average crossover strategy — buy when SMA(20) crosses above SMA(50) and RSI &lt; 65,
+          sell on reverse cross or RSI &gt; 75.
+          <span class="legend-item buy-legend">▲ Buy</span>
+          <span class="legend-item sell-legend">▼ Sell</span>
+          <span class="legend-item sma-fast-legend">—— SMA 20</span>
+          <span class="legend-item sma-slow-legend">- - SMA 50</span>
+        </p>
+        <div class="chart-wrap" style="position:relative; width:100%; height:300px;">
+          <canvas id="chart-price" role="img" aria-label="Price and moving averages chart with buy and sell signals"></canvas>
+        </div>
+      </section>
+
+      <div class="chart-row-2col">
+        <!-- RSI -->
+        <section class="section chart-section">
+          <h2 class="section-title">RSI (14)</h2>
+          <div class="chart-wrap" style="position:relative; width:100%; height:180px;">
+            <canvas id="chart-rsi" role="img" aria-label="RSI indicator chart"></canvas>
+          </div>
+        </section>
+        <!-- Volume -->
+        <section class="section chart-section">
+          <h2 class="section-title">Volume</h2>
+          <div class="chart-wrap" style="position:relative; width:100%; height:180px;">
+            <canvas id="chart-volume" role="img" aria-label="Trading volume chart"></canvas>
+          </div>
+        </section>
+      </div>
+
+      <!-- Portfolio Performance -->
+      <section class="section chart-section">
+        <h2 class="section-title">Portfolio vs Buy & Hold</h2>
+        <p class="section-desc">
+          <span class="legend-item sma-fast-legend">—— Strategy</span>
+          <span class="legend-item" style="color:var(--muted)">- - Buy &amp; Hold</span>
+        </p>
+        <div class="chart-wrap" style="position:relative; width:100%; height:220px;">
+          <canvas id="chart-portfolio" role="img" aria-label="Strategy portfolio value versus buy and hold benchmark chart"></canvas>
+        </div>
+      </section>
+
+      <!-- Drawdown -->
+      <section class="section chart-section">
+        <h2 class="section-title">Drawdown</h2>
+        <div class="chart-wrap" style="position:relative; width:100%; height:150px;">
+          <canvas id="chart-drawdown" role="img" aria-label="Portfolio drawdown percentage chart"></canvas>
+        </div>
+      </section>
+
+      <!-- Trade Log -->
+      <section class="section">
+        <h2 class="section-title">Trade Log</h2>
+        <div class="table-wrapper">
+          <table class="trade-table">
+            <thead>
+              <tr>
+                <th>Date</th><th>Type</th><th>Price</th><th>Shares</th><th>P&amp;L</th>
+              </tr>
+            </thead>
+            <tbody id="trade-log"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+    </div><!-- /#page-dashboard -->
+
+    <!-- ── Page 2: Markowitz Optimizer (built by markowitz.ts) ───────── -->
+    <div id="page-markowitz" class="page" style="display:none"></div>
+
+    <!-- ── Page 3: Learn (built by learn.ts) ─────────────────────────── -->
+    <div id="page-learn" class="page" style="display:none"></div>
+
+  </main>
+
+  <footer class="footer">
+    Built by Owen Hong · Python + yfinance · TypeScript + Vega-Lite
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 *)",
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(npm approve-scripts *)",
+      "Bash(npx tsc *)",
+      "Bash(echo \"=== exit: $? ===\")",
+      "Bash(node -e ' *)",
+      "Bash(cd *)",
+      "Read(//Applications/Google Chrome.app/Contents/MacOS/**)",
+      "Read(//Applications/Chromium.app/Contents/MacOS/**)",
+      "Bash(node -e \"console.log\\('chart.js', require\\('./node_modules/chart.js/package.json'\\).version\\)\")",
+      "Bash(pkill -f \"vite\")",
+      "Bash(npm run *)"
+    ]
+  }
+}
