@@ -219,7 +219,10 @@ function renderCharts(data: TradingData): void {
 // Runs once, the first time the Dashboard page is shown.
 export async function initDashboard(): Promise<void> {
   try {
-    const res = await fetch("/trading_data.json");
+    // Use Vite's base URL so the fetch works both in dev ("/") and on GitHub
+    // Pages ("/algo-trading-dashboard/"). A bare "/trading_data.json" would hit
+    // the domain root and 404 under the project base path.
+    const res = await fetch(`${import.meta.env.BASE_URL}trading_data.json`);
     const data: TradingData = await res.json();
 
     document.querySelector(".ticker-label")!.textContent = data.ticker;

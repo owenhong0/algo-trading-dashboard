@@ -1,20 +1,22 @@
-// src/main.ts — app shell + hash-based router for the 3-page dashboard
+// src/main.ts — app shell + hash-based router for the 4-page dashboard
 
 import { initDashboard } from "./pages/dashboard";
 import { initMarkowitz } from "./pages/markowitz";
 import { initLearn } from "./pages/learn";
+import { initKronos } from "./pages/kronos";
 
-type PageName = "dashboard" | "markowitz" | "learn";
-const PAGES: PageName[] = ["dashboard", "markowitz", "learn"];
+type PageName = "dashboard" | "markowitz" | "learn" | "kronos";
+const PAGES: PageName[] = ["dashboard", "markowitz", "learn", "kronos"];
 
-const inited: Record<PageName, boolean> = { dashboard: false, markowitz: false, learn: false };
+const inited: Record<PageName, boolean> = { dashboard: false, markowitz: false, learn: false, kronos: false };
 
 function initPage(name: PageName): void {
   if (inited[name]) return;
   inited[name] = true;
   if (name === "dashboard") void initDashboard();
   else if (name === "markowitz") void initMarkowitz();
-  else initLearn();
+  else if (name === "learn") initLearn();
+  else initKronos();
 }
 
 function showPage(name: PageName): void {
