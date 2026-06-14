@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b183184-875e-4706-a4fe-c39d6fca1ac3" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/owenhong0/algo-trading-dashboard.git",
+    "accountId": "c88f4551-38e8-44fb-978c-53e8694fcabe"
+  }
+}]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0007411129818415" />
+      <entry key="MS500" value="1.6077876135828373" />
+      <entry key="S2" value="5.364296139040192" />
+      <entry key="S5" value="8.662159939126376" />
+      <entry key="S10" value="10.506102512667885" />
+      <entry key="S30" value="12.157953522926691" />
+      <entry key="S60" value="13.917072200275186" />
+      <entry key="M2" value="18.659417805931728" />
+      <entry key="M5" value="27.847529007596325" />
+      <entry key="M10" value="39.052961003574346" />
+      <entry key="M15" value="50.74346091839689" />
+      <entry key="M30" value="79.46742707025695" />
+      <entry key="H1" value="109.14875532722745" />
+      <entry key="H2" value="131.10863095833426" />
+      <entry key="H4" value="144.55644231402744" />
+      <entry key="D1" value="157.27462702435705" />
+      <entry key="W1" value="159.60677163348194" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.6243391065574025" />
+      <entry key="MS500" value="1.44764558519577" />
+      <entry key="S2" value="5.238790371305211" />
+      <entry key="S5" value="8.56897434925616" />
+      <entry key="S10" value="10.445767165389405" />
+      <entry key="S30" value="12.133646574621762" />
+      <entry key="S60" value="13.903593153752944" />
+      <entry key="M2" value="18.651249599982314" />
+      <entry key="M5" value="27.84298088642883" />
+      <entry key="M10" value="39.04963143838874" />
+      <entry key="M15" value="50.740572405085274" />
+      <entry key="M30" value="79.4652741087514" />
+      <entry key="H1" value="109.14735022126301" />
+      <entry key="H2" value="131.10781304659656" />
+      <entry key="H4" value="144.55599891310703" />
+      <entry key="D1" value="157.27454777565563" />
+      <entry key="W1" value="159.6067601732056" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3F6qzLWIV1a1M9zWfN9B9CPud77" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/lilliemach/Downloads/algo-trading-dashboard",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/Users/lilliemach/Downloads/algo-trading-dashboard/algo-trading-dashboard/frontend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-c59985aa861c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.24374.152" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b183184-875e-4706-a4fe-c39d6fca1ac3" name="Changes" comment="" />
+      <created>1781406127536</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1781406127536</updated>
+      <workItem from="1781406128564" duration="7576000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/algo-trading-dashboard/frontend/src/types.js" />
+        <option value="$PROJECT_DIR$/algo-trading-dashboard/frontend/src/main.js" />
+      </list>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/main.ts</url>
+          <line>58</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
