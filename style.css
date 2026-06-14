@@ -692,6 +692,166 @@ main { max-width: 1280px; margin: 0 auto; padding: 24px 24px 48px; }
 
 .ref-note { font-size: 12px; color: var(--muted); line-height: 1.5; }
 
+/* ── Kronos page ──────────────────────────────────────────────────────────── */
+.kronos-lead { font-size: 14px; color: var(--text); line-height: 1.7; }
+.kronos-lead strong { color: var(--blue); font-weight: 600; }
+
+.stat-chip-row { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+
+.stat-chip {
+  background: rgba(88,166,255,0.12);
+  border: 1px solid rgba(88,166,255,0.3);
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+/* Flow diagram (architecture + connection) */
+.flow-diagram {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding: 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.flow-node {
+  background: var(--panel);
+  border: 1px solid var(--blue);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.flow-arrow { color: var(--muted); font-size: 16px; }
+
+/* Two-column explanation */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+
+.explain-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.explain-head {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--purple);
+  margin-bottom: 8px;
+}
+
+.explain-card p { font-size: 13px; color: var(--muted); line-height: 1.6; }
+.explain-card strong { color: var(--text); }
+
+/* Model zoo */
+.model-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+}
+
+.model-card {
+  position: relative;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.model-card-rec { border-color: var(--blue); box-shadow: 0 0 0 1px rgba(88,166,255,0.3); }
+
+.model-rec-tag {
+  position: absolute;
+  top: -9px; right: 12px;
+  background: var(--blue);
+  color: var(--bg);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.model-name { font-family: var(--font-mono); font-size: 15px; font-weight: 600; color: var(--text); }
+
+.model-stat { display: flex; flex-direction: column; gap: 1px; }
+.model-stat-val { font-family: var(--font-mono); font-size: 18px; font-weight: 600; color: var(--blue); }
+.model-stat-lbl { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.model-tok { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+/* Code walkthrough */
+.code-steps { display: flex; flex-direction: column; gap: 14px; }
+
+.code-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.code-step-title {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.code-block {
+  margin: 0;
+  background: #0b0e13;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 14px;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--green);
+  white-space: pre;
+}
+
+/* Link buttons */
+.link-row { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.link-btn {
+  background: rgba(88,166,255,0.12);
+  border: 1px solid rgba(88,166,255,0.3);
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.link-btn:hover { background: rgba(88,166,255,0.2); border-color: var(--blue); }
+
 /* ── Footer ───────────────────────────────────────────────────────────────── */
 .footer {
   text-align: center;
